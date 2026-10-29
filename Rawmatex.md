@@ -1,26 +1,10 @@
 SCAN NMAP:
 
 nmap -sC -sV -p- 10.124.249.17
-Starting Nmap 7.98 ( https://nmap.org ) at 2026-10-29 23:08 +0300
-Nmap scan report for 10.124.249.17
-Host is up (0.056s latency).
-Not shown: 65533 closed tcp ports (reset)
-PORT   STATE SERVICE VERSION
-22/tcp open  ssh     OpenSSH 8.4p1 Debian 5+deb11u4 (protocol 2.0)
-| ssh-hostkey: 
-|   3072 41:63:cc:59:84:3d:71:e9:b5:dd:55:32:0c:03:cc:0a (RSA)
-|   256 b1:f8:be:33:77:4f:9e:68:0b:ae:82:0a:43:b6:6b:98 (ECDSA)
-|_  256 b3:0b:f5:ae:9c:ec:55:e8:b0:ac:61:e7:ac:2b:00:5b (ED25519)
-80/tcp open  http    nginx 1.18.0
-|_http-cors: HEAD GET POST PUT DELETE PATCH
-| http-title: RawMatEx | 
-|_Requested resource was /auth/login
-|_http-trane-info: Problem with XML parsing of /evox/about
-|_http-server-header: nginx/1.18.0
-Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 21.09 seconds
+22/tcp open  ssh    
+80/tcp open  http    nginx 1.18.0
+
 
 Check website, we are have login page:
 
